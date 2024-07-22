@@ -5,16 +5,16 @@ import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 
-public class TestPasswordChecker {
+public class PasswordCheckerTest {
 
     @BeforeEach
     public void testBefore() {
-        System.out.println("Начинается выполнение теста");
+        String s = "Начинается выполнение теста";
     }
 
     @AfterEach
     public void testAfter() {
-        System.out.println("Завершено выполнение теста");
+        String s = "Завершено выполнение теста";
     }
 
     @Test
@@ -27,9 +27,5 @@ public class TestPasswordChecker {
         }, "IllegalArgumentException was expected");
 
         Assertions.assertEquals("Введено отрицательное значение", exception.getMessage());
-
-        if (true) {
-            System.out.println("Фактический результат соответствует ожидаемому");
-        }
     }
 }
