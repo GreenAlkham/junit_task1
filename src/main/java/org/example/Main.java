@@ -16,7 +16,7 @@ public static List<String> statement() {
         statement.add("Баланс кредитной карты после пополнения: " + creditAccount.getBalance());
         creditAccount.pay(10000);
         statement.add("Баланс кредитной карты после списания: " + creditAccount.getBalance());
-        System.out.println(statement);
+       // System.out.println(statement);
         return statement;
     }
 
